@@ -8,12 +8,19 @@ const ToDo = () => {
   const [tasks, setTasks] = useState([
     {
       id: Math.random(),
-      text: "Learn React",
-      day: "Monday",
+      text: "learn react",
+      day: "monday",
     },
   ]);
 
   const addTask = (text, day) => {
+    tasks.forEach((task) => {
+      if (Object.values(task).includes(text)) {
+        alert("Task already exists");
+      } else {
+        setTasks([...tasks, { id: Math.random(), text: text, day: day }]);
+      }
+    });
     setTasks([...tasks, { id: Math.random(), text: text, day: day }]);
   };
 
