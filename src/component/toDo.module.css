@@ -1,0 +1,27 @@
+.taskList {
+  text-align: start;
+  margin: 5px auto;
+  border: 1px solid #ccc;
+  background-color: aliceblue;
+  border-radius: 3px;
+  width: 90%;
+}
+
+.taskList:hover {
+  background-color: #f2f2f2;
+}
+.cross {
+  cursor: pointer;
+  /* border: 1px solid #ccc; */
+  font-size: 11px;
+  padding: 5px;
+}
+.day {
+  display: block;
+  margin-left: 20px;
+}
+.text{
+    /* border: 1px solid #ccc; */
+    width: 80%;
+    display: inline-block;
+}
